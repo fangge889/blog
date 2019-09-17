@@ -1,8 +1,6 @@
-# 作家 Wiki~
+# [作家Wiki](https://fangge889.github.io)
 
-[![Build Status](https://api.travis-ci.org/zthxxx/Wiki-site.png?branch=writing)](https://travis-ci.org/zthxxx/Wiki-site)
+出于个人兴趣做的作家Wiki。
 
-只收录喜欢的作家。
-
-Follow me from [**GitHub**](https://github.com/fangge889).
+[网页文件](https://github.com/fangge889/fangge889.github.io)
 
