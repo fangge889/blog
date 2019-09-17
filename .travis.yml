@@ -9,27 +9,7 @@ branches: # 指定要构建的分支
   - master 
 
 install: # 在安装项目环境阶段需要运行的命令，一条一行，类似的还有 before_install
-  #- source travis_env_init.sh # 指定 shell 脚本文件来做初始化
-echo "Hexo environment pre install start."
-echo "${__COMMENTS__}"
-
-npm install -g gulp > /dev/null
-npm install -g hexo-cli > /dev/null
-npm install
-
-echo "hexo and packages install complete."
-
-# Set git config 
-git config --global user.name "${GIT_USER_NAME}"
-git config --global user.email "${GIT_USER_EMAIL}"
-sed -i'' "s~git@github.com:~https://${GIT_REPO_TOKEN}@github.com/fangge889/fangge889.github.io.git~" _config.yml
-
-
-theme_config_file="themes/Wikitten/_config.yml"
-cp "${theme_config_file}.example" "${theme_config_file}"
-# Set Wikitten theme config
-
-echo "Hexo environment pre install complete OK."
+  - source travis_env_init.sh # 指定 shell 脚本文件来做初始化
 
 script: # 在构建阶段需要运行的命令，一条一行，类似的还有 before_script、after_script
   - hexo clean 
