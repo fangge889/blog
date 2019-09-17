@@ -122,5 +122,6 @@ theme: Wikitten
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:fangge889/blog.git
+  #repository: git@github.com:fangge889/blog.git
+  repository: https://GIT_REPO_TOKEN@github.com/fangge889/fangge889.github.io.git
   branch: master
