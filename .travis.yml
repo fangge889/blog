@@ -8,16 +8,32 @@ branches: # 指定要构建的分支
   only: # only 表示只构建以下分支
   - master 
 
-install: # 在安装项目环境阶段需要运行的命令，一条一行，类似的还有 before_install
-  - source travis_env_init.sh # 指定 shell 脚本文件来做初始化
+cache:
+  directories:
+    - node_modules
 
-script: # 在构建阶段需要运行的命令，一条一行，类似的还有 before_script、after_script
-  - hexo clean 
-  - hexo generate # Hexo 常规命令，执行清理和生成
-  - gulp
-  
-after_success: # 在构建成功后要运行的命令，构建失败不会执行，其他同上
-  - hexo deploy > /dev/null # 通过 hexo 的 deploy 命令部署博客
+before_install:
+  - npm install -g hexo-cli
+
+# S: Build Lifecycle
+install:
+  - npm install
+  - npm install hexo-deployer-git --save
+
+before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo clean
+  - hexo generate
+
+after_script:
+  - git config user.name "fangge889"
+  - git config user.email "fangge889@gmail.com"
+  - sed -i "s/gh_token/${GIT_REPO_TOKEN}/g" ./_config.yml
+  - cat ./_config.yml
+  - hexo deploy
+# E: Build LifeCycle
 
 notifications: # 设置通知项
   email: true
