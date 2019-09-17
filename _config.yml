@@ -123,5 +123,6 @@ theme: Wikitten
   
 deploy:
 - type: git
-  repo: https://GIT_REPO_TOKEN@github.com/fangge889/fangge889.github.io.git
+	repository: git@github.com:fangge889/fangge889.github.io.git
+  #repo: https://GIT_REPO_TOKEN@github.com/fangge889/fangge889.github.io.git
   branch: master
