@@ -12,6 +12,7 @@ branches:
     - master 
     
 before_install:
+  - npm install -g gulp
   - npm install -g hexo-cli    
   
 # Start: Build Lifecycle
