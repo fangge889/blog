@@ -12,5 +12,17 @@ __COMMENTS__='
 #    ./travis_env_init.sh
 '
 
+ 
+
+echo "Hexo environment pre install start."
+echo "${__COMMENTS__}"
+ 
+
+echo "hexo and packages install complete."
+ 
+
 theme_config_file="themes/Wikitten/_config.yml"
 cp "${theme_config_file}.example" "${theme_config_file}"
+# Set Wikitten theme config
+
+echo "Hexo environment pre install complete OK."
