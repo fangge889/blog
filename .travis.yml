@@ -11,16 +11,16 @@ branches:
   only:
     - master 
     
-before_install:
-  #- npm install -g hexo-cli    
+ 
+before_install: 
   - npm install -g gulp
 	- npm install -g hexo-cli
   
 # Start: Build Lifecycle
 install:
   - npm install
-  #- npm install hexo-deployer-git --save
   
+#- npm install hexo-deployer-git --save  
 # 执行清缓存，生成网页操作
 script:
   - hexo clean
