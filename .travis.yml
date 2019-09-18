@@ -9,8 +9,7 @@ node_js:
 # 指定博客源码分支，因人而异。hexo博客源码托管在独立repo则不用设置此项
 branches:
   only:
-    - master 
-    
+    - master     
  
 before_install: 
   - npm install -g gulp
@@ -25,7 +24,6 @@ install:
 script:
   - hexo clean
   - hexo generate
-  - gulp
 
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
 after_script:
