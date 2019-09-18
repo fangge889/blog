@@ -18,6 +18,9 @@ before_install:
 install:
   - npm install
   - npm install hexo-deployer-git --save
+  
+theme_config_file="themes/Wikitten/_config.yml"
+cp "${theme_config_file}.example" "${theme_config_file}"
 
 before_script:
  # - npm install -g gulp
