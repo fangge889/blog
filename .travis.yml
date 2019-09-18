@@ -19,8 +19,6 @@ install:
   - npm install
   - npm install hexo-deployer-git --save
   - source travis_env_init.sh # 指定 shell 脚本文件来做初始化
-theme_config_file="themes/Wikitten/_config.yml"
-cp "${theme_config_file}.example" "${theme_config_file}"
 
 before_script:
  # - npm install -g gulp
