@@ -4,22 +4,21 @@ language: node_js
 sudo: required
 # 指定node_js版本
 node_js: 
-  - 7.9.0
+  - "8"
 
 # 指定博客源码分支，因人而异。hexo博客源码托管在独立repo则不用设置此项
 branches:
   only:
-    - master     
- 
-before_install: 
-  - npm install -g gulp
-	- npm install -g hexo-cli
+    - master 
+    
+before_install:
+  - npm install -g hexo-cli    
   
 # Start: Build Lifecycle
 install:
   - npm install
+  - npm install hexo-deployer-git --save
   
-#- npm install hexo-deployer-git --save  
 # 执行清缓存，生成网页操作
 script:
   - hexo clean
