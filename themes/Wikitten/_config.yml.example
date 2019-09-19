@@ -16,11 +16,11 @@ customize:
     profile:
         enabled: false # Whether to show profile bar
         avatar: # css/images/avatar.png
-        gravatar: zth_9451@qq.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: zthxxx
+        gravatar: fangge889@gmail.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+        author: fangge889
         author_title: Designer & Programmer
-        location: Chengdu, China
-        follow: https://github.com/zthxxx/
+        location: shenzhen, China
+        follow: https://github.com/fangge889/
     highlight: monokai
     sidebar: left # sidebar position, options: left, right
     category_perExpand: false # enable article categories list per expanding
@@ -28,9 +28,9 @@ customize:
     favicon: /favicon.ico # path to favicon
     default_index_file: index.md # if this, it will display at site index instead of default index page
     social_links:
-        github: https://github.com/zthxxx/zthxxx.github.io
-        stack-overflow: http://stackoverflow.com/users/7277090/zthxxx?tab=profile
-        codepen: http://codepen.io/zthxxx/
+        github: https://github.com/fangge889/fangge889.github.io
+        stack-overflow: 
+        codepen: 
         rss: /atom.xml
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 
